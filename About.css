@@ -1,0 +1,333 @@
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+body{
+    margin: 0px;
+    background-color: antiquewhite;
+    padding: 0px 0px 0px 0px;
+}
+
+#container_main{
+    background-color: rgba(0, 0, 0, 0.837);
+    height: 49.9px;
+    width: 100%;
+    align-content: center;
+}
+
+#logo{
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    width: 25%;
+    text-align: center;
+    font-size: large;
+    font-weight: 100;
+    left: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#logo_text{
+    color: hsl(24, 100%, 50%);
+    transition: text-shadow, color 0.3s;
+    font-family: "Rochester", cursive;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+#logo_text:hover{
+    text-shadow: 1px 1px 10px red;
+}
+
+#navigation{
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    width: 45%;
+    height: 20px;
+    text-align: center;
+}
+
+#active{
+    background-color: hsla(19, 100%, 50%, 0.3) !important;
+    box-shadow: hsla(19, 100%, 50%, 0.3) 0px 0px 20px;
+}
+
+#navigation_li{
+    display: flex;
+    position: absolute;
+    color: white;
+    bottom: -15px;
+    justify-content: space-between;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    left: 10%;
+    list-style-type: none;
+    line-height: 50px;
+}
+
+#navigation_li li{
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    width: 80px;
+    height: 50px;
+    top: 15px;
+    background-color: transparent;
+    cursor:pointer;
+    transition: 0.3s background-color;
+}
+
+#navigation_li li:hover{
+    background-color: rgba(0, 0, 0, 0.837);
+}
+
+#contacts{
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    width: 15%;
+    text-align: center;
+    top: -2px;
+    left: 10%;
+}
+
+#contacts button{
+    color: white;
+    background-color: hsl(15, 100%, 50%);
+    width: 100px;
+    height: 30px;
+    border-radius: 100px;
+    border: rgba(0, 0, 0, 0.837) 1px solid;
+    cursor: pointer;
+    font-size:medium;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: background-color, color, box-shadow 0.2s;
+}
+
+#contacts button:hover{
+    background-color: hsl(17, 100%, 50%);
+    color: whitesmoke;
+    box-shadow: 1px 1px 20px red;
+}
+
+#body_container{
+    width: 100%;
+    height: 92.8vh;
+    display: flex;
+}
+
+#img1{
+    width: 44%;
+    height: 100%;   
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#img1 img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(20%);
+    opacity: 1;
+    transition: opacity 0.4s;
+    animation: ani_ini2;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes ani_ini2{
+    0%{
+        filter: grayscale(100%);
+    } 
+}
+
+#desc{
+    width: 59.65%;
+    height: 100%;
+    background-color: transparent;
+    padding-left: 30px;
+    padding-right: 50px;
+    font-family: "Caveat", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 18.5px;
+}
+
+#desc h1{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.775);
+    font-family: "Rochester", cursive;
+    font-style: italic;
+}
+
+#caption{
+    width: 67%;
+    height: 50%;
+    background-color: transparent;
+    position: relative;
+    bottom: 75%;
+    left: 15%;
+    align-content: center;
+    color: white;
+    font-size: 1.2rem;
+    animation-name: ani_ini;
+    animation-duration: 100000s;
+    animation-timing-function: ease-in;
+    opacity: 0;
+}
+
+#caption p{
+    font-family: "Inconsolata", monospace;
+}
+
+#caption h1{
+    font-family: "Rochester", cursive;
+}
+
+@keyframes ani_ini{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    0.001%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    0.0025%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    0.003%{
+        opacity: 1;
+        transform: translateY(75%);
+        text-shadow: black 1px 1px 20px;
+    }
+    0.0032%{
+        opacity: 1;
+        transform: translateY(60%);
+        text-shadow: black 1px 1px 20px;
+    }
+    0.0033%{
+        opacity: 1;
+        transform: translateY(60%);
+        text-shadow: black 1px 1px 20px;
+    }
+    0.0034%{
+        opacity: 1;
+        transform: translateY(75%);
+        text-shadow: black 1px 1px 20px;
+    }
+    0.0035%{
+        opacity: 1;
+        transform: translateY(70%);
+        text-shadow: black 1px 1px 20px;
+    }
+    0.00357%{
+        opacity: 1;
+        transform: translateY(70%);
+        text-shadow: black 1px 1px 20px;
+    }
+    0.0036%{
+        opacity: 1;
+        transform: translateY(71%);
+        text-shadow: black 1px 1px 20px;
+    }
+}
+
+#people{
+    background-color: hsla(0, 0%, 0%, 0.915);
+    border-top: white solid 0.1px;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: block;
+    align-content: space-around;
+}
+
+#p_left{
+    position: relative;
+    font-family: "Rochester", cursive;
+    font-size: 3.2rem;
+    width: 50%;
+    color: wheat;
+    font-weight: 60rem;
+    padding-left: 150px;
+    position: absolute;
+    bottom: 100px;
+    text-shadow: red 0px 0px 10px;
+}
+
+#p_right{
+    position: relative; 
+    left: 920px;
+    width: 30%; 
+    bottom: 10px;
+    background-color: transparent;
+    border-radius: 20px 0px 10px 0px;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+#name{
+    width: 70%;
+    height: 40px;
+    background-color: hsla(0, 0%, 28%, 0.504);
+    border: none;
+    padding-left: 10px;
+    color: white;
+}
+
+#submit{
+    height: 42px;
+    background-color: red;
+    border: none;
+    width: 50px;
+    transition: all 0.35s;
+    font-size: 0.8em;
+    color: white;
+}
+
+#submit:hover{
+    background-color: rgba(87, 80, 80, 0.137);
+    color: red;
+}
+
+
+::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.648);
+}
+
+#p_bottom{
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 150px;
+    width: 50%;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+span{
+    color: red;
+}
+
+#opening{
+    position: relative;
+    left: 965px;
+    width: 450px;
+    color: white;
+    font-size: 1.1rem;
+    top: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
